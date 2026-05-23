@@ -17,8 +17,6 @@
 - [Inputs](#inputs)
 - [Outputs](#outputs)
 - [Key Differences Between the Two Scripts](#key-differences-between-the-two-scripts)
-- [Known Limitations](#known-limitations)
-- [Future Work](#future-work)
 - [Related Repositories](#related-repositories)
 - [License](#license)
 
@@ -268,7 +266,7 @@ This repository is **Stage 2** of a three-stage fasciculation analysis pipeline:
 **Stage 2 — This repository**
 > Applies optical flow to both synthetic and real ultrasound video. Outputs rotation CSV used to initialize Stage 3.
 
-**Stage 3 — [Fasciculation-Detection-Using-Synthetic-Data](https://github.com/ShzdiTrnum/Fasciculation-Detection-Using-Synthetic-Data)**
+**Stage 3 — [ALS-Fasciculation-BBVI-Detection-Ultrasound]([https://github.com/ShzdiTrnum/Fasciculation-Detection-Using-Synthetic-Data](https://github.com/ShzdiTrnum/ALS-Fasciculation-BBVI-Detection-Ultrasound))**
 > Takes the optical flow CSV + video and runs Bayesian BBVI + EM to refine rotation estimates with full uncertainty quantification.
 
 ### Pipeline Summary
@@ -288,8 +286,6 @@ Fasciculation-Detection-Using-Synthetic-Data
         ▼
       outputs/
 ```
-
----
 
 ## License
 
