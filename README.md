@@ -235,27 +235,6 @@ The CSV from the **synthetic script** serves as `Original_Groundtruth_Values.csv
 
 ---
 
-## Known Limitations
-
-- Video paths are hardcoded — update before running locally.
-- The curl approximation uses simple first-order finite differences; no sub-pixel accuracy.
-- Square ROI windows do not perfectly match annular ring geometry.
-- No CLI argument parser — all configuration is done by editing the script.
-- Processing is CPU-only (no GPU acceleration needed for optical flow).
-
----
-
-## Future Work
-
-- [ ] Add CLI argument parsing (`argparse`)
-- [ ] Unify ALS and synthetic scripts into a single configurable script
-- [ ] Support true annular (circular) ring masks instead of square windows
-- [ ] Add quantitative comparison between optical flow estimates and simulation ground truth
-- [ ] Add Colab notebook (`.ipynb`) with step-by-step walkthrough
-- [ ] Save output plots automatically to `outputs/`
-
----
-
 ## Related Repositories
 
 This repository is **Stage 2** of a three-stage fasciculation analysis pipeline:
