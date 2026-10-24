@@ -14,6 +14,7 @@
 - [Usage](#usage)
 - [Configuration Parameters](#configuration-parameters)
 - [Algorithm Overview](#algorithm-overview)
+- [Data Availability](#data-availability)
 - [Inputs](#inputs)
 - [Outputs](#outputs)
 - [Key Differences Between the Two Scripts](#key-differences-between-the-two-scripts)
@@ -200,6 +201,14 @@ This produces a perimeter-normalized, radius-weighted rotation estimate per ring
 Results are saved as a structured CSV with columns `Frame`, `Size Xpx` for each ring size.
 
 ---
+
+## Data Availability
+
+The clinical ultrasound video used by `optical_flow_als_ultrasound.py` was recorded at Tokyo Metropolitan
+Neurological Hospital and is **not distributed** with this repository. The synthetic pipeline runs end to end
+with public inputs: generate the video with
+[Fasciculation-Simulation](https://github.com/ShzdiTrnum/Fasciculation-Simulation) and run
+`optical_flow_synthetic.py`. See [`data/README.md`](data/README.md).
 
 ## Inputs
 
